@@ -1,0 +1,113 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+/* Crear variables con root */
+:root {
+    --tipografiaGeneral : "Roboto", impact, sans-serif;
+    --colAmarillo: #EAC926;
+    --colAzul: #03264C;
+    --colCeleste: #1259c3;
+    --colGrisDark: #666;
+    --colGrisLight: #ebebeb;
+    --colVerde: #39b54a;
+
+}
+
+body {
+    font-family: var(--tipografiaGeneral);
+    font-weight: 300;
+}
+
+.main__header {
+    background-color: var(--colAmarillo);
+}
+
+.frase_header {
+    text-align: center;
+}
+
+.hamburguer__button {
+    background-color: var(--colCeleste);
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home__banner{
+ margin: 20px 0px;
+}
+
+.main__main{
+    font-size: 12px;
+}
+
+.main__titulares{
+    font-size: 24px;
+}
+
+.main__precio{
+  font-size: 18px;  
+}
+
+.main__descuento, .main__descrip{
+    font-size: 16px;
+}
+
+.main__footer{
+    font-size:  12px;
+}
+
+.section__footer{
+    text-align: center;
+    font-size: 16px;
+    color: var(--colGrisDark);
+}
+
+.section__footer div{
+    color: var(--colCeleste);
+    display: block;
+    margin: auto;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+.section__footer h4{
+    font-size: 16px;
+    margin-top: -10px
+}
+
+.section__footer p{
+    font-size: 12px;
+    text-align: center;
+    margin: -20px 50px 0px;
+}
+
+.section__footer__copyright{
+    color: var(--colGrisDark);
+    margin: 50px 0px 0px;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    /* padding: 0px 0px 0px 0px; */
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
