@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://kit.fontawesome.com/2f0ffaca8f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header class="main__header">
+        <div class="home__header__container">
+          <div class="main__header__top__bar">
+            <img src="/img/logo-mercado-liebre.svg" alt="Logo"/>
+          </div>
+          <div class="home__header__busqueda">
+            <form action="/buscar" method="GET">
+            <input class="home__header__barbusq" type="text" placeholder="Buscar productos, marcas" name="search">
+            <button class="home__header__button--lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+          <p class="frase_header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+          <nav class="main-header-bottom-bar">
+            <ul class="izq_navbar">
+              <li><a href="/ofertas">Ofertas</a></li>
+              <li><a href="/tiendasoficiales">Tiendas Oficiales</a></li>
+              <li><a href="/vender">Vender</a></li>
+              <li><a href="/ayuda"> Ayuda</a></li>
+            </ul>
+          </nav>    
+            <nav class="main-header-bottom-bar">
+              <ul class="der_navbar">
+                <li><a href="/creacuenta">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
+                <li><a href="/ingresa">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="/miscompras">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+              </ul>
+            <div class="hamburguer__button"> 
+              <i class="fas fa-bars"></i>
+            </div>    
+            </nav>  
+            <div class="home__header__div__banner">
+            <img src="/img/img-home-banner.jpg" alt="Home banner" class="home__banner">
+            </div>
+        </header>
+    <main class="register__main">
+        <h2>Creá tu cuenta</h2>
+        <form action="register.html">
+            <div class="register__main__form">
+                <div class="register__main__form-div">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Nombre y Apellido*" id="name" name="name">
+                    <span class="register__main__form-div-span">*Debe ingresar su nombre y apellido</span>
+                </div>
+                <div class="register__main__form-div">
+                    <label for="nick"></label>
+                    <input type="text" placeholder="Nombre de usuario*" id="nick" name="nick">
+                    <span class="register__main__form-div-span">*Debe ingresar su nombre de usuario</span>
+                </div>
+                <div class="register__main__form-div">
+                    <p class="register__main__form-div-p">Fecha De nacimiento</p>
+                    <label for="birthday"></label>
+                    <input type="date" id="birthday" name="birthday">
+                    <span class="register__main__form-div-span">*Ingrese su fecha de nacimiento</span>
+                </div>
+                <div class="register__main__form-div">
+                    <label for="Domicilio"></label>
+                    <input type="text" placeholder="Domicilio*" id="Domicilio" name="Domicilio">
+                    <span class="register__main__form-div-span">*Debe ingresar su domicilio</span>
+                </div>
+                <div>
+                    <p class="register__main__form-div-p">Perfil de usuario*</p>
+                    <div>
+                        <label class="register__main__form-label-radiocheck" for="flexCheckDefault">
+                            Comprador
+                        </label>
+                        <input type="radio" value="" id="comprador" name="preference">
+
+                        <label class="register__main__form-label-radiocheck" for="flexCheckDefault">
+                            Vendedor
+                        </label>
+                        <input type="radio" value="" id="vendedor" name="preference">
+                        <span class="register__main__form-div-span">*Debe elegir una opcion</span>
+                    </div>
+                </div>
+                <div class="register__main__form-div-intereses">
+                    <p class="register__main__form-div-p">Intereses</p>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Electro">
+                        <label for="Electro">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Moda">
+                        <label for="Moda">Moda</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Hogar">
+                        <label for="Hogar">Hogar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Jugeteria">
+                        <label for="Jugeteria">Jugeteria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="intereses" value="Vida sana">
+                        <label for="Vida sana">Vida sana</label>
+                    </div>
+                </div>
+                <div class="register__main__form-div">
+                    <label for="password"></label>
+                    <input type="password" placeholder="Contraseña*" id="password" name="password">
+                    <span class="register__main__form-div-span">*Debe ingresar su Contraseña</span>
+                </div>
+                <div class="register__main__form-div">
+                    <label for="password2"></label>
+                    <input type="password" placeholder="Confirmar contraseña*" id="password2" name="password2">
+                    <span class="register__main__form-div-span">*Contraseña no coincide con la anterior</span>
+                </div>
+                <div class="register__main__form-div-button">
+                    <input class="register__main__form-button-reset" type="reset" value="Borrar">
+                    <input class="register__main__form-button-submit" type="submit" value="Enviar">
+                </div>
+            </div>
+
+        </form>
+    </main>
+    <footer class="main__footer">
+        <section class="section__footer">
+          <div class="pagar__button"> 
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+          <h4>Pagá con tarjeta o en efectivo</h4>
+          <p>Con Mercado Liebre Cash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section class="section__footer">
+          <div class="envio__button"> 
+            <i class="fa-solid fa-gift"></i>
+          </div>  
+          <h4>Envío gratis desde $ 2.500</h4>
+          <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+        <section class="section__footer">
+          <div class="seguridad__button"> 
+            <i class="fa-solid fa-user-shield"></i>
+          </div>  
+          <h4>Seguridad de principio a fin</h4>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
+        </section>
+        <section class="section__footer__copyright">
+          <p>Copyright 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+      </footer>
+</body>
