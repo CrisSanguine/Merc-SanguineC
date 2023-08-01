@@ -30,6 +30,11 @@ body {
     font-weight: 300;
 }
 
+.home__header__button--lupa{
+    margin-left: -15px;
+
+}
+
 /* HEADER */
 .main__header {
     background-color: var(--colAmarillo);
@@ -113,7 +118,18 @@ background-color: var(--colGrisLight);
 
 article {
     margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
+/* para el TP6 le agrege margenes (right y left) a article. */
+/* TP6 - Le agrege sombra al articulo mostrado en celular tambien */
+article {
+    width: 45%;
+    }
+
+article:hover {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        }
 
 article img {
     margin: 0;
@@ -154,9 +170,40 @@ article img {
 
 }
 
+
+
 .home__main__camion i {
     margin-top: 5px;
+    transform: rotate(0deg);
 }
+
+
+/* TP 6 */
+
+.home__main-caja i:hover {
+    animation: rotate 1s linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* FIN TP 6 */
 
 .main__precio {
     font-size: 18px;
@@ -184,6 +231,21 @@ article img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+/* TP 6 */
+.home__main-caja h5{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.home__main-caja:hover h5 {
+ height: 20px;
+}
+
+/* Fin TP 6 */
 
 .main__footer{
     font-size:  12px;
@@ -403,13 +465,21 @@ a {
     }
 
     article {
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+   
+        width: 45%;
+        }
+
+        article:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        }
+
+    article {
         padding: 0;
         border: 0;
         margin-bottom: 10px;
         justify-content: space-between;
         flex-wrap: column;
-        width: calc(50% - 10px)
+        width: calc(50% - 20px)
     }
 
     article img {
@@ -485,6 +555,21 @@ a {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+
+    /* TP 6 */
+    .home__main-caja h5{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+    
+    .home__main-caja:hover h5 {
+     height: 20px;
+    }
+
+    /* FIN TP 6 */
 
 
     /* FOOTER */
@@ -696,13 +781,21 @@ a {
         }
     
         article {
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            width: 45%;
+            }
+    
+            article:hover {
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            }
+
+        article {
+            
             padding: 0;
             border: 0;
             margin-bottom: 10px;
             justify-content: space-between;
             flex-wrap: column;
-            width: calc(25% - 10px)
+            width: calc(25% - 20px)
         }
     
         article img {
@@ -818,6 +911,24 @@ a {
             color: var(--colGrisDark);
             margin: 50px 0px 0px;
         }
-        
+
+          /* TP-6 FOOTER (solo desktop) */
+          .main__footer{
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between
+        }
+        .section__footer{
+            width: 30%;
+        }
+        /* Entendi que solo se hacia en el escritorio el cambio de color de icono */
+        footer .div {
+            cursor: pointer;
+            transition: color 0.3s; 
+          }
+
+          footer div:hover {
+            color: #ff9900; 
+          }
 
 }
